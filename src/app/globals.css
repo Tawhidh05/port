@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Neutrals from your palette (every slate-* class in the project uses these) */
+  --color-slate-50:  #FBFBFB; /* Snow */
+  --color-slate-100: #F1F1F2;
+  --color-slate-200: #E4E4E6;
+  --color-slate-300: #C9C9CC;
+  --color-slate-400: #A8A8AB;
+  --color-slate-500: #878787; /* Dusty Grey */
+  --color-slate-600: #5F5F63;
+  --color-slate-700: #3F3F43;
+  --color-slate-800: #262626; /* Slate Grey */
+  --color-slate-900: #1B1B1E; /* Gluon Grey */
+  --color-slate-950: #151419; /* Dark Void */
+
+  /* One accent: Liquid Lava. 500 = fills/buttons, 400 = dark-mode text, 600/700 = light-mode text (contrast) */
+  --color-brand-400: #F98A3F;
+  --color-brand-500: #F56E0F; /* Liquid Lava */
+  --color-brand-600: #BF4B00;
+  --color-brand-700: #9A3C00;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-slate-50 text-slate-700 antialiased dark:bg-slate-950 dark:text-slate-300; overflow-x: hidden; }
+:focus-visible { @apply outline-2 outline-offset-2 outline-brand-500; }
+
+/* Simple scroll-reveal (see components/Reveal.jsx) */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
