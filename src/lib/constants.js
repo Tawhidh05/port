@@ -39,8 +39,6 @@ export const SKILLS = {
 };
 
 export const TIMELINE = [
-  { year: "Training", title: "Complete Web Development Course", place: "Programming Hero", text: "Full-stack course covering React, Node.js, Express, MongoDB and Firebase." },
-  { year: "2024", title: "Sales Representative (Contract)", place: "Bohu Bangladesh Limited, Dhaka", text: "On-site contract role (Jan to Mar 2024) building communication and computer-literacy skills." },
+  { year: "2025 to 2026", title: "Complete Web Development Course", place: "Programming Hero", text: "Full-stack course covering React, Node.js, Express, MongoDB and Firebase." },
   { year: "2024 to 2028", title: "BA in English", place: "National University of Bangladesh", text: "Bachelor of Arts, currently studying." },
-  { year: "2021 to 2023", title: "HSC, Business Studies", place: "Novelty College", text: "Higher Secondary Certificate (Mar 2021 to Aug 2023)." },
 ];
