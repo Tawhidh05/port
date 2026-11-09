@@ -40,5 +40,5 @@ export const SKILLS = {
 
 export const TIMELINE = [
   { year: "2025 to 2026", title: "Complete Web Development Course", place: "Programming Hero", text: "Full-stack course covering React, Node.js, Express, MongoDB and Firebase." },
-  { year: "2025 to Present", title: "BBA", place: "Sonargaon university", text: "Bachelor of Business Administration, currently studying." },
+  { year: "2026 to Present", title: "BBA", place: "Sonargaon university", text: "Bachelor of Business Administration, currently studying." },
 ];
